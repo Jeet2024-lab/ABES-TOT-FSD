@@ -1,0 +1,68 @@
+/* h1{
+    background-color: antiquewhite;
+}
+
+
+p{
+    background-color: lightskyblue;
+    color: crimson;
+}
+
+*{
+    background-color: lime;
+} */
+
+
+#p1{
+    background-color: lightsalmon;
+    color: darkred;
+}
+
+.paragraph{
+    background-color: lightgreen;
+    color: white;
+    font-size: xx-large;
+}
+
+div p{
+    background-color: orange;
+    color: darkgoldenrod;
+}
+
+div>p{
+    background-color:darkcyan;
+    color: darkgoldenrod;
+}
+
+div+p{
+    background-color: maroon;
+    color: white;
+}
+
+div~p{
+    background-color: darkviolet;
+    color: white;
+}
+
+/* p:hover{
+    background-color: deeppink;
+    color: black;
+} */
+
+
+p::before{
+    content: "Welcome to ABES Engineering College ";  ;
+}
+p::after{
+    content: " - Happy Learning!";
+    color: darkorange;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+p::selection{
+    background-color: violet;
+}
+
+
