@@ -5,6 +5,8 @@
     border: 2px solid black;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    background-color:cadetblue;
     
 }
 
@@ -17,8 +19,13 @@
     /* background-color: white; */
     /* justify-content: center; */
     /* align-items: center; */
-    align-content: center;
+    /* align-content: center; */
     align-items: center;
     color: white;
+    border-radius: 20px ;
 
+}
+
+div.img{
+    border-radius: 10px ;
 }
