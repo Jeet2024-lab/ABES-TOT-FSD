@@ -101,29 +101,73 @@ background-color: lightsalmon;
 }
 
 .box1{
-height: 150px;
-    width: 150px;
+/* height: 150px; */
+    /* width: 150px; */
+    height: auto;
+    width: auto;
     border: 1px solid red;
     background-color: lightseagreen;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
 }
 
 .box2{
  height: 150px;
     width: 150px;
     border: 1px solid red;
-      background-color: lightseagreen
+      background-color: lightseagreen;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows:repeat(2,1fr) ;
+
+
+}  
+.box21{
+ height: 20px;
+    width: 20px;
+    border: 1px solid red;
+      background-color: lightseagreen;
+      
+
+}  
+.box22{
+ height: 20px;
+    width: 20px;
+    border: 1px solid red;
+      background-color: lightseagreen;
+      
+
+}  
+.box23{
+ height: 20px;
+    width: 20px;
+    border: 1px solid red;
+      background-color: lightseagreen;
+      
+
+}  
+.box4{
+ height: 150px;
+    width: 150px;
+    border: 1px solid red;
+      background-color: lightseagreen;
+      
+
 }  
 
 .box3{
 height: 150px;
     width: 150px;
     border: 1px solid red;
-      background-color: lightseagreen
+      background-color: lightseagreen;
+
 } 
 
 .box4{
 height: 150px;
     width: 150px;
     border: 1px solid red;
-      background-color: lightseagreen
+      background-color: lightseagreen;
 }  
