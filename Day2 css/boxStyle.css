@@ -1,10 +1,17 @@
 .box{
-    /* box-sizing: content-box; */
-    box-sizing: border-box;
+    box-sizing: content-box;
+    /* box-sizing: border-box; */
+    text-align: center;
+    background-color: lightblue;
+    font-size: 20px;
     height: 400px;
     width: 400px;
     border: 1px solid red;
-    padding: 2px;
-    margin: 10px 20px 30px;
+    padding: 20px;
+    margin: 100px 20px 30px;
+    border : 2px solid black;
+    border-radius: 40px;
+    outline-style: dashed;
+    /* text-transform: lowercase; */
     
 }
