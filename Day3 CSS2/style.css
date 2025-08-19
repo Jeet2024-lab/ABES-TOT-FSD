@@ -5,33 +5,84 @@ height: 400px;
 width: 800px;
 margin: 50px;
 background-color: lightgrey;
+/* flex-direction: column; */
+/* flex-direction: row-reverse; */
+/* flex-direction: column-reverse; */
+flex-wrap: wrap;
+gap: 10px;
+/* justify-content: flex-start;
+ */
+ /* justify-content: flex-end; */
+ justify-content: space-evenly;
+
+ /* vertically placing */
+ align-content: center;
+
+ /* horizontal placing */
+ align-items: center;
+
+
+
+
 
 
 
 }
 
 .box1{
-    width: 200px;
+    width: 190px;
     height:100px ;
 border : 1px dotted black;
 background-color: lightsalmon;
+order: 2;
 
 }
 
 .box2{
-    width: 200px;
+    width: 190px;
     height:100px ;
 border : 1px dotted black;
 background-color: lightsalmon;
+order: 1;
 }
 .box3{
-    width: 200px;
+    width: 190px;
     height:100px ;
 border : 1px dotted black;
 background-color: lightsalmon;
 }
 .box4{
-    width: 200px;
+    width: 190px;
+    height:100px ;
+border : 1px dotted black;
+background-color: lightsalmon;
+}
+.box5{
+    width: 190px;
+    height:100px ;
+border : 1px dotted black;
+background-color: lightsalmon;
+}
+.box6{
+    width: 190px;
+    height:100px ;
+border : 1px dotted black;
+background-color: lightsalmon;
+}
+.box6{
+    width: 190px;
+    height:100px ;
+border : 1px dotted black;
+background-color: lightsalmon;
+}
+.box7{
+    width: 190px;
+    height:100px ;
+border : 1px dotted black;
+background-color: lightsalmon;
+}
+.box8{
+    width: 190px;
     height:100px ;
 border : 1px dotted black;
 background-color: lightsalmon;
