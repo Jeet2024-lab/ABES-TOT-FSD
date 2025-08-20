@@ -53,11 +53,55 @@
 // else {
 //     console.log("Not Equal");
 // }
-let a = 12;
-let b = "12";
-if(a === b) {
-    console.log("Equal");
+// let a = 12;
+// let b = "12";
+// if(a === b) {
+//     console.log("Equal");
+// }
+// else {
+//     console.log("Not Equal");
+// }
+
+// 
+// let val = sum();
+// console.log("SUM="+val);
+
+// function sum(){
+//     return 10 + 20;
+// }
+
+//Function as an expression 
+
+// const data=function(){
+//     console.log("Hi how are you?");
+// }
+
+// data();
+
+// Arrow function
+
+// const data=()=>{
+// return "Hi how are you?";
+// }
+
+// console.log(data());
+
+// 
+
+
+// const add=(a,b)=>a+b;
+
+// console.log(add(10,20));
+
+// (()=>{
+//     console.log("I am an IIFE");})();
+
+// (function(){
+//     console.log("I am an IIFE");})();
+
+function greet(msg="Hello") {
+    console.log(msg);
+
 }
-else {
-    console.log("Not Equal");
-}
+greet("Hi");
+greet();
