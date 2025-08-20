@@ -1,0 +1,63 @@
+// var a=12;
+// console.log("hi="+a);
+
+
+
+// var a = 12;
+// console.log(typeof(a));
+// var a = 12;
+// var a= 12.5;
+// console.log(a);
+
+// const a=12;
+// console.log(a);
+// // a=30;
+// console.log(a);
+// let a=12;
+// console.log(a);
+// a=30;
+// console.log(a);
+
+// var a = 12;
+
+// if(a>10)
+// {
+//     var a = 20;
+// console.log(a);
+// }
+// console.log(a);
+
+// let a = 12;
+
+// if(a>10)
+// {
+//     let a = 20;
+// console.log(a);
+// }
+// console.log(a);
+
+// a = 12;
+
+// if(a>10)
+// {
+//     a = 20;
+// console.log(a);
+// }
+// console.log(a);
+
+// let a = 12;
+// let b = "12";
+// if(a == b) {
+//     console.log("Equal");
+// }
+// else {
+//     console.log("Not Equal");
+// }
+let a = 12;
+let b = "12";
+if(a === b) {
+    console.log("Equal");
+}
+else {
+    console.log("Not Equal");
+}
