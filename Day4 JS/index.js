@@ -99,9 +99,38 @@
 // (function(){
 //     console.log("I am an IIFE");})();
 
-function greet(msg="Hello") {
-    console.log(msg);
+// function greet(msg="Hello") {
+//     console.log(msg);
+
+// }
+// greet("Hi");
+// greet();
+
+function selectLanguage(lang) {
+    let data;
+    
+    function javaCompiler() {
+        if (lang == "Java") {
+            function javaCompiler() {
+                console.log("Java Compiler is being executed");
+            }
+            data = javaCompiler();
+        }
+        else {
+            if (lang == "c") {
+                function cCompiler() {
+                    console.log("C Compiler is being executed");
+                }
+                data = cCompiler();
+            }
+            else {
+                console.log("Selected Language compiler is not found");
+            }
+        }
+    }
+
 
 }
-greet("Hi");
-greet();
+
+
+selectLanguage("Java");
