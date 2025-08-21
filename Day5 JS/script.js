@@ -21,3 +21,5 @@ employee.name = "Jitendra Kumar Chauhan";
 console.log(employee.name);
 employee.skills[1] = "Angular";
 console.log(employee.skills);
+delete employee.age;
+console.log(employee);
