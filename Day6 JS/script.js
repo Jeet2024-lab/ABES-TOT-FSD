@@ -4,33 +4,50 @@
 // 1)Callback
 
 
-function register(cb){
+function register(){
+    return new Promise((resolve,reject)=>{setTimeout(()=>{
+        console.log("register end"); return reject("error produced");},1000);
+
+    })
     console.log("register user");
-    setTimeout(()=>{console.log("register end");cb();},1000);
+    
     // cb(login);
     
     
 }
-function sendEmail(cb){
-    console.log("send user Email");
-    setTimeout(()=>{console.log("Send user Email End");cb();},2000);
+function sendEmail(){
+    return new Promise((resolve,reject)=>{
+console.log("send user Email");
+    setTimeout(()=>{console.log("Send user Email End");resolve();},2000);
+    })
+    
     // cb(getData);
     
 }
-function login(cb){
-    console.log("login here");
-    setTimeout(()=>{console.log("Login End");cb();},3000);
+function login(){
+     
+    return new Promise((resolve,reject)=>{
+console.log("login here");
+    setTimeout(()=>{console.log("Login End");resolve();},3000);
+    })
+    
     // cb(displayData);
     
 }
-function getData(cb){
+function getData(){
+    return new Promise((resolve,reject)=>{
     console.log("getData");
-    setTimeout(()=>{console.log("getData end ");cb();},4000);
+    setTimeout(()=>{console.log("getData end ");resolve();},4000);
+    })
+    
     
 }
 function displayData(){
+    return new Promise((resolve,reject)=>{
     console.log("display user Data");
     setTimeout(()=>{console.log("display user Data end ")},1000);
+    })
+    
 }
 
 // register(sendEmail);
@@ -43,14 +60,18 @@ function displayData(){
 // }
 
 
-register(()=>{
-    sendEmail(()=>{
-        login(()=>{
-            getData(()=>{
-                displayData();
-            });
-        });
-    });
-});
+// register(()=>{
+//     sendEmail(()=>{
+//         login(()=>{
+//             getData(()=>{
+//                 displayData();
+//             });
+//         });
+//     });
+// });
+
+register().then(sendEmail).then(login).then(getData).then(displayData).catch((err)=>console.log("error received is " +err));
+
+
 
 console.log("call other application");
