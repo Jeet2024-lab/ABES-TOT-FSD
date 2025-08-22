@@ -6,7 +6,10 @@
 
 function register(){
     return new Promise((resolve,reject)=>{setTimeout(()=>{
-        console.log("register end"); return reject("error produced");},1000);
+        console.log("register end"); 
+        // return reject("error produced");
+        resolve();
+    },1000);
 
     })
     console.log("register user");
@@ -70,8 +73,22 @@ function displayData(){
 //     });
 // });
 
-register().then(sendEmail).then(login).then(getData).then(displayData).catch((err)=>console.log("error received is " +err));
+// register().then(sendEmail).then(login).then(getData).then(displayData).catch((err)=>console.log("error received is " +err));
 
+async function ex1(){
+    // try{
+await register();
+await sendEmail();
+await login();
+await getData();
+await displayData();
+    // }
 
+    // catch(err){
+    //     console.log(" Error " +err);
+    // }
+}
 
+// ex1();
+ex1().then(console.log("All task completed")).catch((err)=>{console.log("error produced is :")+erer});
 console.log("call other application");
