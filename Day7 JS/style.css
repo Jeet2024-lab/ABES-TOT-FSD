@@ -1,0 +1,12 @@
+table,tr,td{
+border: 1px solid black;
+table-layout: auto;
+text-align: center;
+vertical-align: middle;
+
+}
+
+tr th{
+    background-color: chocolate;
+    border: 1px solid black;
+}
